@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>BAC - Atestat la informatică</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="continut-centrat">
+				<div class="stanga">
+					<a href="index.html"><img src="imagini/logo.png" alt="#"></a>
+				</div>
+				<div class="dreapta">
+					<a href="index.html">Acasă</a>
+					<a href="index.html#sporturi">Materii</a>
+					<a href="index.html#jucatori">Personalități</a>
+				</div>
+			</div>
+		</header>
+		<div class="banner-mare" style="background-image: url(imagini/Mate2.png);">
+			<div class="content">
+				<p>Matematică</p>
+				<h1>Totul despre matematică</h1>
+			</div>
+		</div>
+		<div class="continut continut-centrat">
+			<h2>Știai că&hellip;</h2>
+			<p id="factcont">&hellip;</p>
+			<button onclick="fact();" style="margin-bottom: 1.5rem;">Află ceva nou</button>
+
+			<h2>Despre matematică</h2>
+			<p>Matematica este studiul cantității, structurii, spațiului și schimbării. Prin folosirea abstracției și a logicii, matematica dezvoltă modelele care ajută la înțelegerea lumii naturale și umane. Matematica este esențială în multe domenii, inclusiv știința naturii, ingineria, medicina și științele sociale, și joacă un rol important în majoritatea aspectelor vieții cotidiene.</p>
+
+			<h2>Importanța matematicii</h2>
+			<p>Matematica este adesea numită limbajul științei. Este un instrument crucial în înțelegerea lumii și fundamentul pentru fiecare inovație tehnologică. Cunoașterea matematicii ne permite să formulăm problemele și să găsim soluții eficiente. De asemenea, matematica ne ajută să dezvoltăm gândirea critică și abilitățile de rezolvare a problemelor.</p>
+
+			<h2>Matematicieni celebri</h2>
+			<p>De-a lungul istoriei, matematicieni precum Euclid, Isaac Newton, Leonhard Euler și Carl Friedrich Gauss au contribuit la forma actuală a matematicii. Descoperirile și teoriile lor continuă să influențeze matematica modernă.</p>
+
+			<h2>Matematica în educație</h2>
+			<p>Educația matematică la toate nivelurile încurajează dezvoltarea gândirii logice, a înțelegerii structurate și a abilităților de abstractizare. În școli, matematica este o componentă esențială a curriculumului, începând cu aritmetica de bază și ajungând la matematica avansată în învățământul superior.</p>
+		</div>
+		<div class="download-section" style="margin: 20px; text-align: center;">
+			<p>Pentru a descărca un model de subiect, apasă pe butonul de mai jos:</p>
+			<button onclick="downloadPDF();" style="padding: 10px 20px; font-size: 16px; cursor: pointer; margin-top: 20px;">Descarcă programa</button>
+		</div>
+		<style type="text/css">
+			.banner-mare {
+				height: 100vh;
+				position: revert;
+				background-size: cover;
+				background-position: center center;
+			}
+
+			.banner-mare::before {
+				content: "";
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background: linear-gradient(to top, #000, transparent);
+			}
+
+			.banner-mare .content {
+				position: absolute;
+				bottom: 1em;
+				left: 1em;
+				font-size: 2em;
+				line-height: 1;
+			}
+
+			.banner-mare .watermark {
+				position: absolute;
+				bottom: 1em;
+				right: 1em;
+				font-size: 1.5em;
+				transform: skewX(-10deg);
+			}
+
+			.continut {
+				margin-top: 2em;
+				max-width: 750px;
+				text-align: justify;
+			}
+
+			.continut p, .continut h2 {
+				margin-bottom: 1rem;
+			}
+		</style>
+		<script type="text/javascript">
+			function downloadPDF() {
+        window.location.href = 'pdf/model-matematica.pdf';
+    }
+			const facts = [
+				"Numărul π (Pi) este raportul dintre circumferința unui cerc și diametrul său.",
+				"În teoria numerelor, un număr prim este un număr natural mai mare decât 1 care are exact doi divizori: 1 și el însuși.",
+				"Fibonacci este cunoscut pentru seria de numere numită după el, un model matematic ce apare în diverse forme în natură.",
+				"Algebra abstractă a studiat structurile matematice numite grupuri, inele și corpuri.",
+				"Teorema lui Pitagora este una dintre cele mai cunoscute teoreme din matematică și stabilește o relație importantă în geometria euclidiană între cele trei laturi ale unui triunghi dreptunghic."
+			];
+
+			function fact() {
+				document.getElementById('factcont').innerHTML = facts[Math.floor(Math.random() * facts.length)];
+			}
+
+			fact();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>BAC - Atestat la informatică</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="continut-centrat">
+				<div class="stanga">
+					<a href="index.html"><img src="imagini/logo.png" alt="#"></a>
+				</div>
+				<div class="dreapta">
+					<a href="index.html">Acasă</a>
+					<a href="index.html#sporturi">Materii</a>
+					<a href="index.html#jucatori">Personalități</a>
+				</div>
+			</div>
+		</header>
+		<div class="banner-mare" style="background-image: url(imagini/eminescu.png);">
+			<div class="content">
+				<p>Poet</p>
+				<h1>Totul despre Mihai Eminescu</h1>
+			</div>
+		</div>
+		<div class="continut continut-centrat">
+			<h2>Despre acest poet</h2>
+			<p>Mihai Eminescu (n. 15 ianuarie 1850, Botoșani - d. 15 iunie 1889, București) este considerat de mulți cel mai mare poet român. Opera sa a avut un impact profund asupra culturii și literaturii române, fiind adesea referit ca reprezentantul suprem al poeziei românești.</p>
+			<p>Eminescu a început să scrie poezie la o vârstă fragedă și a devenit cunoscut în lumea literară românească în timpul studiilor la Viena și Berlin. A lucrat ca jurnalist și a avut o contribuție majoră la dezvoltarea culturii române prin poezia, proza și activitatea sa jurnalistică. Printre cele mai cunoscute lucrări ale sale se numără "Luceafărul", "Floare albastră", "Mai am un singur dor", și "Sara pe deal".</p>
+			<p>Pe lângă poezia sa, Eminescu a fost un gânditor profund, interesat de problemele sociale și politice ale timpului său. A fost un critic al condițiilor sociale din România și a avut o influență semnificativă asupra gândirii românești. Eminescu a fost recunoscut postum ca unul dintre cei mai importanți scriitori români, iar opera sa continuă să inspire poeți și scriitori din întreaga lume. A murit la vârsta de 39 de ani, lăsând în urmă o moștenire literară impresionantă care îl menține ca o figură centrală în literatura română.</p>
+		</div>
+		
+		<style type="text/css">
+			.banner-mare {
+				height: 100vh;
+				position: revert;
+				background-size: cover;
+				background-position: center center;
+			}
+
+			.banner-mare::before {
+				content: "";
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background: linear-gradient(to top, #000, transparent);
+			}
+
+			.banner-mare .content {
+				position: absolute;
+				bottom: 1em;
+				left: 1em;
+				font-size: 2em;
+				line-height: 1;
+			}
+
+			.banner-mare .watermark {
+				position: absolute;
+				bottom: 1em;
+				right: 1em;
+				font-size: 1.5em;
+				transform: skewX(-10deg);
+			}
+
+			.continut {
+				margin-top: 2em;
+				max-width: 750px;
+				text-align: justify;
+			}
+
+			.continut p, .continut h2 {
+				margin-bottom: 1rem;
+			}
+		</style>
+	</body>
+</html>

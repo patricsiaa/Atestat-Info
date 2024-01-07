@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	background: black;
+	color: white;
+}
+
+button {
+	background: #ffae42;
+	color: #fff;
+	padding: .5em 1em;
+	border: none;
+	font-size: 1em;
+	cursor: pointer;
+	box-shadow: .25em .25em 0 #000;
+	transition: box-shadow 200ms ease;
+}
+
+button:hover, button:focus {
+	box-shadow: 0 0 0 #000;
+}
+
+.continut-centrat {
+	max-width: 1200px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	color: #fff;
+	background: #00457c;
+	box-shadow: 0 .25em 0 #000;
+}
+.continut-centrat img {
+	width: 125px; /* You can adjust this value to suit your design */
+	  height: auto; /* This ensures the height scales proportionally to the width */
+	 border-radius: 10px;
+}
+header .continut-centrat {
+	display: flex;
+	gap: 1em;
+	align-items: center;
+	justify-content: space-between;
+	padding: .5em 1em;
+	box-sizing: border-box;
+}
+
+header h1 {
+	font-size: 1.5em;
+	transform: skewX(-10deg);
+}
+
+header a {
+	color: inherit;
+	text-decoration: none;
+}
+
+header a:hover, header a:focus {
+	text-decoration: underline;
+}
+
+header .dreapta {
+	display: flex;
+	gap: 1.5em;
+	align-items: center;
+}

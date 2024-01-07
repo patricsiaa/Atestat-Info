@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>BAC - Atestat la informatică</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="continut-centrat">
+				<div class="stanga">
+					<a href="index.html"><img src="imagini/logo.png" alt="#"></a>
+				</div>
+				<div class="dreapta">
+					<a href="index.html">Acasă</a>
+					<a href="index.html#sporturi">Materii</a>
+					<a href="index.html#jucatori">Personalități</a>
+				</div>
+			</div>
+		</header>
+		<div class="banner-mare" style="background-image: url(imagini/costin.png);">
+			<div class="content">
+				<p>Chimist</p>
+				<h1>Totul despre Costin D. Nenițescu</h1>
+			</div>
+		</div>
+		<div class="continut continut-centrat">
+			<h2>Despre acest chimist</h2>
+			<p>Costin D. Nenițescu (n. 15 noiembrie 1902, București – d. 28 iulie 1970, București) a fost unul dintre cei mai importanți chimisti români, cunoscut în special pentru contribuțiile sale în domeniul chimiei organice. A fost membru al Academiei Române și un profesor universitar apreciat, având un rol major în dezvoltarea cercetărilor chimice în România.</p>
+			<p>Nenițescu este recunoscut pentru cercetările sale în sinteza organică, chimia heterociclică și chimia naturală. Printre realizările sale se numără dezvoltarea unor metode noi de sinteză a compușilor organici și studiul structurii moleculare. A fost, de asemenea, un pionier în studiul compușilor de coordinație și a fost activ în aplicarea chimiei în industrie și tehnologie.</p>
+			<p>Pe lângă contribuțiile sale științifice, Nenițescu a fost și un autor prolific, scriind numeroase lucrări și manuale de chimie care au fost folosite de generații de studenți și cercetători. Moștenirea sa continuă să fie o sursă de inspirație pentru chimistii din întreaga lume.</p>
+		</div>
+		<style type="text/css">
+			.banner-mare {
+				height: 100vh;
+				position: revert;
+				background-size: cover;
+				background-position: center center;
+			}
+
+			.banner-mare::before {
+				content: "";
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background: linear-gradient(to top, #000, transparent);
+			}
+
+			.banner-mare .content {
+				position: absolute;
+				bottom: 1em;
+				left: 1em;
+				font-size: 2em;
+				line-height: 1;
+			}
+
+			.banner-mare .watermark {
+				position: absolute;
+				bottom: 1em;
+				right: 1em;
+				font-size: 1.5em;
+				transform: skewX(-10deg);
+			}
+
+			.continut {
+				margin-top: 2em;
+				max-width: 750px;
+				text-align: justify;
+			}
+
+			.continut p, .continut h2 {
+				margin-bottom: 1rem;
+			}
+		</style>
+	</body>
+</html>

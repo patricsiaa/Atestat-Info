@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>BAC - Atestat la informatică</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="continut-centrat">
+				<div class="stanga">
+					<a href="index.html"><img src="imagini/logo.png" alt="#"></a>
+				</div>
+				<div class="dreapta">
+					<a href="index.html">Acasă</a>
+					<a href="index.html#sporturi">Materii</a>
+					<a href="index.html#jucatori">Personalități</a>
+				</div>
+			</div>
+		</header>
+		<div class="banner-mare">
+			<div class="continut" id="countdown-2">
+				<p>Bacul începe în:</p>
+				<h1 id="countdown">Se încarcă&hellip;</h1>
+				<p>Probă scrisă la Limba și Literatura Română</p>
+				<a href="sport-atletism.html"><button>Află mai multe</button></a>
+			</div>
+		</div>
+		<!-- <div class="welcome continut continut-centrat">
+			<h1>Bine ai venit pe <i>SPORT<sub>CENTRAL</sub></i>!</h1>
+			<h4>Află tot despre sporturile tale preferate și jucătorii care îți plac cel mai mult.</h4>
+
+			<div class="interview">
+				<iframe src="https://www.youtube.com/embed/TpxiFbD1TI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<div class="despre">
+					<p>De actualitate</p>
+					<p>De actualitate</p>
+					<h2>Interviu exclusiv! cu Ion Țiriac</h2>
+					<p>Ion Țiriac a fost invitat la emisiunea „Prietenii lui Ovidiu”, transmisă integral pe GSP.ro în fiecare miercuri, ora 20:00, și a vorbit despre situația gimnasticii românești. Fostul mare jucător de tenis vorbește despre cum a făcut primul milion de euro și despre clasamentul în care a fost inclus de Forbes.</p>
+
+					<button onclick="this.parentElement.remove()" style="background: #000; width: fit-content; box-shadow: none; padding: .5em 2em;">Vizionează</button>
+				</div>
+			</div>
+		</div> -->
+		<div class="sondaj continut continut-centrat">
+			<h2>La ce materie vei da proba la alegere?</h2>
+			<div class="optiuni">
+				<button>Informatică <span>52%</span></button>
+				<button>Fizică <span>22%</span></button>
+				<button>Biologie <span>13%</span></button>
+				<button>Chimie <span>3%</span></button>
+			</div>
+		</div>
+		<div class="sporturi continut continut-centrat" id="sporturi">
+			<h2>Materii</h2>
+			<div class="sport" style="background-image: url(imagini/mate.png);">
+				<h2>Matematică</h2>
+				<p>Matematica este fundamentul logic al lumii. Ea modelează ordinea universului prin ecuații și teoreme. Studiul său dezvoltă gândirea critică și abilitățile analitice, esențiale în multe domenii. Pe măsură ce tehnologia avansează, matematica rămâne piatra de temelie a inovației și progresului.</p>
+				<a href="materie-mate.html"><button>Află mai multe</button></a>
+			</div>
+			<div class="sport" style="background-image: url(imagini/romana.png);">
+				<h2>Limba și Literatura Română</h2>
+				<p>Explorăm frumusețea limbii române prin poezie, proză și dramaturgie. Studiul literaturii ne conectează cu rădăcinile culturale și ne îmbogățește vocabularul și expresivitatea. Analiza textelor literare dezvoltă gândirea critică și aprecierea estetică, oferind o fereastră spre sufletul uman.</p>
+				<a href="materie-romana.html"><button>Află mai multe</button></a>
+			</div>
+			<div class="sport" style="background-image: url(imagini/fizica.png);">
+				<h2>Fizică</h2>
+				<p>Fizica deschide ușa către înțelegerea universului. De la particule subatomice la galaxii vaste, totul este guvernat de legi fizice. Studiind fizica, ne antrenăm mintea să gândească logic și să rezolve probleme complexe, pregătindu-ne pentru inovațiile tehnologice ale viitorului.</p>
+				<a href="materie-fizica.html"><button>Află mai multe</button></a>
+			</div>
+			<div class="sport" style="background-image: url(imagini/info.png);">
+				<h2>Informatică</h2>
+				<p>Informatica transformă lumea prin coduri și algoritmi. Învățăm să gândim într-un mod structurat, creând programe care simplifică viața. Este arta de a face posibilă tehnologia, de la aplicații mobile la inteligența artificială, modelând viitorul digital al societății.</p>
+				<a href="materie-info.html"><button>Află mai multe</button></a>
+			</div>
+			<div class="sport" style="background-image: url(imagini/bio.png);">
+				<h2>Biologie</h2>
+				<p>Biologia este studiul vieții în toate formele sale complexe. De la microorganisme la ecosisteme întregi, descoperim diversitatea vieții și interconectivitatea ei. Acest domeniu ne învață despre evoluția speciilor, funcțiile corpului uman și ne inspiră să protejăm mediul înconjurător.</p>
+				<a href="materie-biologie.html"><button>Află mai multe</button></a>
+			</div>
+			<div class="sport" style="background-image: url(imagini/chimie.png);">
+				<h2>Chimie</h2>
+				<p>Chimia este știința care studiază materialele și schimbările lor. Acesta este domeniul alchimiei moderne, unde reacțiile chimice deschid calea către noi materiale și medicamente. Înțelegând chimia, putem dezvolta soluții durabile și inovații care vor îmbunătăți calitatea vieții.</p>
+				<a href="materie-chimie.html"><button>Află mai multe</button></a>
+			</div>
+		</div>
+		<div class="jucatori continut continut-centrat" id="jucatori">
+			<h2>Personalități</h2>
+			<div class="list">
+				<div>
+					<img src="imagini/eminescu.jpg">
+					<h3>Mihai Eminescu</h3>
+					<a href="eminescu.html"><button>Află mai multe</button></a>
+				</div>
+				<div>
+					<img src="imagini/guillaume.jpg">
+					<h3>Guillaume de l'Hôpital</h3>
+					<a href="guillaume.html"><button>Află mai multe</button></a>
+				</div>
+				<div>
+					<img src="imagini/alan.jpg">
+					<h3>Alan Turing</h3>
+					<a href="alan.html"><button>Află mai multe</button></a>
+				</div>
+				<div>
+					<img src="imagini/albert.jpg">
+					<h3>Albert Einstein</h3>
+					<a href="einstein.html"><button>Află mai multe</button></a>
+				</div>
+				<div>
+					<img src="imagini/costin.jpeg">
+					<h3>Costin D. Nenițescu</h3>
+					<a href="costin.html"><button>Află mai multe</button></a>
+				</div>
+				<div>
+					<img src="imagini/george.jpg">
+					<h3>George Emil Palade</h3>
+					<a href="george.html"><button>Află mai multe</button></a>
+				</div>
+			</div>
+		</div>
+		<style type="text/css">
+
+/* Drop Shadow */
+#countdown-2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Text Stroke */
+#countdown-2 p, #countdown-2 h1 {
+    -webkit-text-stroke: 1px black; /* for Chrome and Safari */
+}
+
+/* Background Overlay: This style is for the container of the text, which would be .banner-mare::after in your case */
+.banner-mare::after {
+    /* Assuming there's already a background set, add this line: */
+    background: rgba(0, 0, 0, 0.2); /* Dark overlay, adjust opacity as needed */
+}
+
+/* Adjust Font Weight */
+#countdown-2 {
+    font-weight: 700; /* Bolder font */
+}
+
+/* Change Font Color */
+#countdown-2 {
+    color: #e6e6e6; /* A slightly off-white color, which can be easier on the eyes */
+}
+
+			.banner-mare {
+        background-image: url(imagini/clasa.png);
+        height: 600px;
+        background-size: cover;
+        background-position: 50% 40%;
+        position: relative;
+        /* Change the border color to match your new color scheme */
+        border-bottom: .25em solid #123456; /* Example color */
+    }
+
+
+	.banner-mare::after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        /* Change the overlay color to a semi-transparent version of your primary color */
+        background: #12345680; /* Example color with 50% opacity */
+    }
+
+			.banner-mare .continut {
+				position: absolute;
+				z-index: 1;
+				color: #fff;
+				top: 50%;
+				right: 5%;
+				transform: translateY(-50%);
+				text-align: right;
+				font-size: 1.5em;
+				width: max-content;
+				max-width: 750px;
+			}
+
+			.banner-mare .continut h1 {
+				font-size: 2.5em;
+			}
+
+			.banner-mare .continut button {
+				margin-top: .5em;
+				background: #123456;
+			}
+
+			.continut {
+				padding: 1em .5em;
+			}
+
+			.continut h1, .continut h2, .continut h3, .continut h4 {
+				text-align: center;
+			}
+			#countdown-2 {
+				-webkit-text-stroke: 1px black;
+			}
+
+			#countdown-2 p{
+				font-size: 35px;
+			}
+			.continut-centrat img {
+				width: 125px; /* You can adjust this value to suit your design */
+ 				 height: auto; /* This ensures the height scales proportionally to the width */
+				 border-radius: 10px;
+			}
+
+			.continut-centrat {
+    background-color: #00457c; /* A darker shade of blue */
+}
+
+.continut-centrat .dreapta a {
+    color: #ffffff; /* White for better contrast */
+    padding: 10px 15px; /* Adjust spacing as needed */
+}
+.continut-centrat .dreapta a:hover {
+    background-color: #002d4c; /* Slightly lighter blue for hover effect */
+}
+
+/* Banner Overlay */
+.banner-mare::after {
+    background: rgba(0, 69, 124, 0.6); /* Semi-transparent overlay using the navbar color */
+}
+
+/* Text Color for Countdown */
+.banner-mare .continut {
+    color: #ffffff; /* White for better contrast */
+}
+
+/* Buttons */
+button {
+    background-color: #ffae42; /* A gold color for the buttons */
+    color: #ffffff; /* White text */
+    border: none; /* Removes border */
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+button:hover {
+    background-color: #e6951d; /* A darker shade of gold for hover effect */
+}
+
+			.welcome iframe {
+				aspect-ratio: 16 / 9;
+			}
+
+			.welcome .interview {
+				height: 400px;
+				aspect-ratio: 2 / 1;
+				margin: 0 auto;
+				margin-top: 2em;
+				position: relative;
+				display: flex;
+				align-items: stretch;
+			}
+
+			.welcome .interview .despre {
+				background: linear-gradient(to right, #0000, #ff0054aa 100px, #ff0054 50%);
+				text-align: justify;
+				padding: .5em;
+				padding-left: calc(.5em + 100px);
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				gap: .5em;
+				margin-left: -600px;
+			}
+
+			.welcome .interview .despre h2 {
+				text-align: justify;
+			}
+
+			@media screen and (max-width: 825px) {
+				.banner-mare .continut {
+					top: 50%;
+					right: 50%;
+					transform: translate(50%, -50%);
+					text-align: center;
+				}
+
+				.welcome .interview {
+					display: none;
+				}
+			}
+
+			.sporturi .sport {
+				max-width: 800px;
+				height: 400px;
+				background-size: cover;
+				background-position: center;
+				margin: 0 auto;
+				margin-top: .5em;
+				display: flex;
+				flex-direction: column;
+				gap: .5em;
+				text-align: right;
+				align-items: flex-end;
+				position: relative;
+			}
+
+			.sporturi .sport::before {
+				content: "";
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background: linear-gradient(-22.5deg, #000, #0008);
+			}
+
+			.sporturi .sport > *:first-child {
+				margin-top: auto;
+			}
+
+			.sporturi .sport > *:last-child {
+				margin-bottom: 1em;
+			}
+
+			.sporturi .sport > * {
+				position: relative;
+				max-width: 500px;
+				margin-right: 1em;
+			}
+
+			.sondaj .optiuni {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: stretch;
+				gap: .5em;
+				max-width: 800px;
+				margin: 0 auto;
+				margin-top: .5em;
+			}
+
+			.sondaj .optiuni button {
+				text-align: left;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+
+			.sondaj .optiuni button.used {
+				color: #00457c;
+				background: #fff;
+			}
+
+			.sondaj .optiuni button span {
+				font-weight: normal;
+				opacity: 0;
+				transition: opacity 200ms ease;
+			}
+
+			.sondaj .optiuni.used button span {
+				opacity: 1;
+			}
+
+			.jucatori .list {
+				margin: 0 auto;
+				margin-top: .5em;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-wrap: wrap;
+				gap: 1em;
+				max-width: 800px;
+			}
+
+			.jucatori .list > * {
+				width: 200px;
+				flex-grow: 0;
+				flex-shrink: 0;
+				text-align: center;
+			}
+
+			.jucatori .list > * img {
+				width: 100%;
+				aspect-ratio: 1 / 1;
+				object-fit: cover;
+			}
+
+			.jucatori .list > * button {
+				box-shadow: none;
+				margin: .5em auto;
+			}
+		</style>
+		<script type="text/javascript">
+			var countDownDate = new Date("2024-07-01T00:00:00").getTime();
+
+			var x = setInterval(ctd, 1000);
+			ctd();
+
+			function ctd() {
+				var distance = countDownDate - new Date().getTime();
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				document.getElementById("countdown").innerHTML = addLeadingZero(days) + "d " + addLeadingZero(hours) + "h "
+				+ addLeadingZero(minutes) + "m " + addLeadingZero(seconds) + "s ";
+
+				if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("countdown").innerHTML = "câteva zile";
+				}
+			}
+
+			function addLeadingZero(x) {
+				if(x < 10) return "0" + x;
+				return x;
+			}
+		</script>
+		<script type="text/javascript">
+			const butoaneSondaj = Array.from(document.querySelectorAll(".sondaj .optiuni button"));
+			butoaneSondaj.forEach(el => {
+				el.addEventListener("click", function () {
+					if(el.parentElement.classList.contains("used")) return;
+					el.classList.add("used");
+					el.parentElement.classList.add("used");
+				});
+			});
+		</script>
+	</body>
+</html>

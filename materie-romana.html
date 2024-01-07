@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>BAC - Atestat la informatică</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="continut-centrat">
+				<div class="stanga">
+					<a href="index.html"><img src="imagini/logo.png" alt="#"></a>
+				</div>
+				<div class="dreapta">
+					<a href="index.html">Acasă</a>
+					<a href="index.html#sporturi">Materii</a>
+					<a href="index.html#jucatori">Personalități</a>
+				</div>
+			</div>
+		</header>
+		<div class="banner-mare" style="background-image: url(imagini/romana2.png);">
+			<div class="content">
+				<p>Limba și Literatura Română</p>
+				<h1>Totul despre limba și literatura română</h1>
+			</div>
+		</div>
+		<div class="continut continut-centrat">
+			<h2>Știai că&hellip;</h2>
+			<p id="factcont">&hellip;</p>
+			<button onclick="fact();" style="margin-bottom: 1.5rem;">Află ceva nou</button>
+		
+			<h2>Despre limba și literatura română</h2>
+			<p>Limba română este o limbă romană, formată din evoluția latină vorbită în Dacia și în partea de nord a Peninsulei Balcanice. Literatura română a avut o dezvoltare bogată, marcându-se prin contribuțiile unor autori remarcabili precum Mihai Eminescu, George Coșbuc, Ion Creangă și mulți alții.</p>
+		
+			<h2>Importanța literaturii române</h2>
+			<p>Literatura română oferă o perspectivă unică asupra istoriei, culturii și valorilor societății românești. De la poezia tradițională până la proza modernă, literatura română este o expresie artistică a identității și sufletului românesc.</p>
+		
+			<h2>Scriitori celebri</h2>
+			<p>Scriitori ca Lucian Blaga, Nichita Stănescu, Marin Preda și Mircea Eliade au contribuit semnificativ la patrimoniul literar român și mondial, explorând teme universale prin prisma experienței românești.</p>
+		
+			<h2>Limba și literatura română în educație</h2>
+			<p>Studiul limbii și literaturii române în școli nu doar că dezvoltă abilități lingvistice și de comunicare, dar oferă și o înțelegere profundă a culturii și istoriei românești, contribuind la formarea unor cetățeni conștienți și educați.</p>
+		</div>
+		<div class="download-section" style="margin: 20px; text-align: center;">
+			<p>Pentru a descărca un model de subiect, apasă pe butonul de mai jos:</p>
+			<button onclick="downloadPDF();" style="padding: 10px 20px; font-size: 16px; cursor: pointer; margin-top: 20px;">Descarcă programa</button>
+		</div>
+		<style type="text/css">
+			.banner-mare {
+				height: 100vh;
+				position: revert;
+				background-size: cover;
+				background-position: center center;
+			}
+
+			.banner-mare::before {
+				content: "";
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background: linear-gradient(to top, #000, transparent);
+			}
+
+			.banner-mare .content {
+				position: absolute;
+				bottom: 1em;
+				left: 1em;
+				font-size: 2em;
+				line-height: 1;
+			}
+
+			.banner-mare .watermark {
+				position: absolute;
+				bottom: 1em;
+				right: 1em;
+				font-size: 1.5em;
+				transform: skewX(-10deg);
+			}
+
+			.continut {
+				margin-top: 2em;
+				max-width: 750px;
+				text-align: justify;
+			}
+
+			.continut p, .continut h2 {
+				margin-bottom: 1rem;
+			}
+		</style>
+		<script type="text/javascript">
+
+		function downloadPDF() {
+        window.location.href = 'pdf/model-romana.pdf';
+    }
+
+			const facts = [
+				"Mihai Eminescu este considerat de mulți ca fiind cel mai mare poet român.",
+				"Lucian Blaga este un renumit poet, dramaturg și filosof român, cunoscut pentru trilogia sa culturală.",
+				"George Călinescu a scris una dintre cele mai cuprinzătoare istorii ale literaturii române.",
+				"Ion Creangă este celebru pentru povestirile sale, care combină elemente ale vieții rurale românești cu o povestire fantastică.",
+				"Mircea Eliade, un alt important scriitor român, este cunoscut și pentru studiile sale în domeniul istoriei religiilor."
+			];
+		
+			function fact() {
+				document.getElementById('factcont').innerHTML = facts[Math.floor(Math.random() * facts.length)];
+			}
+		
+			fact();
+		</script>
+	</body>
+</html>
