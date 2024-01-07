@@ -52,7 +52,8 @@
 		</div>
 		<div class="download-section" style="margin: 20px; text-align: center;">
 			<p>Pentru a descărca un model de subiect, apasă pe butonul de mai jos:</p>
-			<button onclick="downloadPDF();" style="padding: 10px 20px; font-size: 16px; cursor: pointer; margin-top: 20px;">Descarcă programa</button>
+			<button onclick="downloadPDF();" style="padding: 10px 20px; font-size: 16px; cursor: pointer; margin-top: 20px;">Descarcă subiectul</button>
+			<button onclick="downloadPDF2();" style="padding: 10px 20px; font-size: 16px; cursor: pointer; margin-top: 20px;">Descarcă baremul</button>
 		</div>
 		<style type="text/css">
 			.banner-mare {
@@ -96,9 +97,12 @@
 			}
 		</style>
 		<script type="text/javascript">
+			function downloadPDF2() {
+        window.location.href = 'pdf/barem-bio.pdf';
+    }
 			function downloadPDF() {
         window.location.href = 'pdf/model-bio.pdf';
-    }
+    	}
 
 			const facts = [
 				"Celula este unitatea de bază a vieții în biologie.",
